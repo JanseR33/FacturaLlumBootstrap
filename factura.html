@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    
+    <!-- CSS del bootstrap-->
+    <link href="Bootstrap5.3.8/Bootstrap5.3.8/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- JS del bootstrap-->
+     <script src="Bootstrap5.3.8/Bootstrap5.3.8/js/bootstrap.min.js" ></script>
+
+     <!-- iconos del bootstrap-->
+    <link rel="stylesheet" href="Bootstrap5.3.8/bootstrap-icons-1.13.1/bootstrap-icons.min.css" />
+</head>
+<body>
+    <div class="container mt-8">
+        <!-- la row del logo i l'altre cosa del costat-->
+        <div class="row">
+            <!-- columna del logotip-->
+            <div class="col-md-6 mb-3">
+                <!-- ja faré la cap i tal més endavant, ara no cal-->
+                <img class="img-fluid" src="img/logo.png" alt="Logotip de l'empresa">
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <!-- no se com posar l'icono aquell, ja ho faré + tard-->
+                    <div class="card-header bg-primary text-white">Dades de la factura</div>
+                    <div class="card-body">
+                        <p class="mb-0">Numero factura</p>
+                        <p class="mb-0">Referencia:</p>
+                        <p class="mb-0">Data d'emissió:</p>
+                        <p class="mb-0"><strong>Periode de venciment:</strong></p>
+                        <p class="mb-0">Data de càrrec:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- rows dels emissors i receptors i tal-->
+        <div class="row">
+            <!-- aquesta es la col de l'emissor-->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text mb-0"><strong>Emissor:</strong></p>
+                        <p class="card-text mb-0">CIF:</p>
+                        <p class="card-text mb-0">Direcció:</p>
+                        <p class="card-text mb-0">Correu:</p>
+                        <p class="card-text mb-0">Web:</p>
+                        <p class="card-text mb-0">Telf:</p>
+                    </div>
+                </div>
+            </div>
+            <!-- columna del receptor-->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text mb-0"><strong>Receptor:</strong></p>
+                        <p class="card-text mb-0">Nom:</p>
+                        <p class="card-text mb-0">NIF:</p>
+                        <p class="card-text mb-0">Direcció:</p>
+                        <p class="card-text mb-0">Correu:</p>
+                        <p class="card-text mb-0">Telf:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row de l'info del consum elèctric-->
+        <div class="row">
+            <div class="col-md-12 mt-3">
+            <div class="card">
+                <div class="card-header bg-primary text-white">INFORMACIÓ DEL CONSUM ELÈCTRIC</div>
+                <div class="card-body">
+                <p class="mb-2"><strong>Períodes de consum:</strong></p>
+                <div class="row">
+                    <!-- columna de la taula-->
+                    <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th>Consum</th>
+                            <th>Mes</th>
+                            <th>Any</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>470kWh</td>
+                            <td>AGO</td>
+                            <td>2018</td>
+                            </tr>
+                            <tr>
+                            <td>460kWh</td>
+                            <td>OCT</td>
+                            <td>2018</td>
+                            </tr>
+                            <tr>
+                            <td>510kWh</td>
+                            <td>DIC</td>
+                            <td>2018</td>
+                            </tr>
+                            <tr>
+                            <td>784kWh</td>
+                            <td>FEB</td>
+                            <td>2019</td>
+                            </tr>
+                            <tr>
+                            <td>530Wh</td>
+                            <td>ABR</td>
+                            <td>2019</td>
+                            </tr>
+                            <tr>
+                            <td>960kWh</td>
+                            <td>AGO</td>
+                            <td>2019</td>
+                            </tr>
+                            <tr>
+                            <td>410kWh</td>
+                            <td>OCT</td>
+                            <td>2019</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                    <img class="img-fluid" src="img/chart.png" alt="gràfica de barres de consum">
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+</body>
+</html>
